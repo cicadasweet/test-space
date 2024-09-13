@@ -1,0 +1,42 @@
+#player,#twitter,#youtube,#twitch{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #db8449;
+    overflow: hidden; 
+    font-size: 20px;
+    font-family: "LINE Seed JP_OTF ExtraBold";
+    opacity: 0;
+    animation: rotateElements 20s infinite;
+}
+
+#player{
+    animation-delay: 0s;
+}
+
+#twitter{
+    animation-delay: 5s;
+}
+
+#youtube{
+    animation-delay: 10s;
+}
+
+#twitch{
+    animation-delay: 15s;
+}
+
+@keyframes rotateElements {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.body-container {
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+.body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    background-color: #007bff;
+    opacity: 0;
+    animation: rotateElements 6s infinite; /* 9秒ごとに無限に繰り返す */
+}
+
+.body:nth-child(1) {
+    animation-delay: 0s; /* 最初の要素のアニメーション開始を0秒に設定 */
+}
+
+.body:nth-child(2) {
+    animation-delay: 3s; /* 2番目の要素のアニメーション開始を3秒に設定 */
+}
+
+.body:nth-child(3) {
+    animation-delay: 6s; /* 3番目の要素のアニメーション開始を6秒に設定 */
+}
+
+@keyframes rotateElements {
+    0%, 100% { opacity: 0; } /* 最初と最後は透明 */
+    10%, 30% { opacity: 1; } /* 10%から30%の間は表示 */
+}
